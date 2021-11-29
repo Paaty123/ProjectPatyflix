@@ -1,0 +1,28 @@
+<div class="cont">
+
+    <div class="fundoMenu">
+
+        <div class="logoPreto">
+            <img src="../../assets/logoPreto.png">
+        </div>
+
+        <div class="opcFilmes">
+            <p><a [routerLink]="['/Acao']" routerLinkActive="active">Ação</a></p>
+            <p><a [routerLink]="['/Anime']" routerLinkActive="active">Anime</a></p>
+            <p><a [routerLink]="['/Aventura']" routerLinkActive="active">Aventura</a></p>
+            <p><a [routerLink]="['/Comedia']" routerLinkActive="active">Comédia</a></p>
+            <p><a [routerLink]="['/Documentario']" routerLinkActive="active">Documentário</a></p>
+            <p><a [routerLink]="['/Drama']" routerLinkActive="active">Drama</a></p>
+            <p><a [routerLink]="['/Musical']" routerLinkActive="active">Musical</a></p>
+            <p><a [routerLink]="['/Romance']" routerLinkActive="active">Romance</a></p>
+            <p><a [routerLink]="['/Suspense']" routerLinkActive="active">Suspense</a></p>  
+            <p><a [routerLink]="['/Terror']" routerLinkActive="active">Terror</a></p>
+        </div>
+    </div>
+
+    <div class="carregarRota">
+        <router-outlet> </router-outlet>
+    </div>
+</div>
+
+<app-footer></app-footer>

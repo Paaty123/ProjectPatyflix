@@ -1,0 +1,10 @@
+<div class="breadcrump">
+    <p><a [routerLink]="['/home']" routerLinkActive="active">Home</a> > <a [routerLink]="['/Suspense']" routerLinkActive="active">Suspense</a></p>
+</div>
+        <div class="filmesSuspense container justify-content-arond">
+            <div class="caixaCadaFilme" *ngFor="let filme of filmes">
+                <img [src]="filme.imagem">
+                <p>{{filme.descricao}}</p>
+            </div>
+        </div>
+        
